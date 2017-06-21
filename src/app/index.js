@@ -14,7 +14,7 @@ const visitorReducer = (state={visitorName:"XYZ", discount:"10000"}, action) => 
 			          ...state,
 			          visitorName: action.payload
 					};
-			// throw Error('an error from sum');
+			throw Error('Error thrown from visitorReducer');
 		}
 	
 	return state;
