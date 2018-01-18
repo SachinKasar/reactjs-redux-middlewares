@@ -18,9 +18,7 @@ export class TwoWheeler extends React.Component {
 	
     render() {
         return ( 
-		    <div className="container">
-                <div className="row">
-				    <div className="row">
+		     <div  className="alert alert-warning" >
 						<h1 style={{color:'blue'}}> Two Wheel </h1>
 						<ul>
 							<li>
@@ -37,8 +35,7 @@ export class TwoWheeler extends React.Component {
 						</ul>
 						<button onClick={() => this.props.changeVisitor('New Visitor')} className="btn btn-primary" >New Visitor</button>
 					</div>
-				</div>
-				</div>
+				 
       
         );
     } 
