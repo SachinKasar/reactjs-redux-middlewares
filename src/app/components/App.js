@@ -10,22 +10,21 @@ class App extends React.Component {
 		var fourWheelSpecs = {manufacturer : "Maruti Suzuki"};
 		
         return ( 
-			<div style={{border: '5px solid grey'}}>
-				 <div className="container">
-					<div className="row">
-						<div className="row">
+			<div className="container">
+                <div className="row col-xs-10 col-xs-offset-1 alert alert-success">
+				    <br/>   
+                    <div className="row">
+                      <div className="col-xs-10 col-xs-offset-1" >
 							<TwoWheeler name="Enfield Classic" 
 									  specs={twoWheelSpecs} 
 									  price="0" 
 									  changeVisitor={() => this.props.setVisitorName("New Visitor")} 
 									  discount={this.props.discountProp.discount}/>
 						</div>
-					</div>
-				  </div>
-			  <hr/>
-				  <div className="container">
-					<div className="row">
-						<div className="row">
+					</div> <br/>
+            
+				   <div className="row">
+                      <div className="col-xs-10 col-xs-offset-1" >
 							<FourWheeler 
 								name="Grand Vitara" 
 								specs={fourWheelSpecs} 
