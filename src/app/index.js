@@ -21,10 +21,7 @@ const visitorReducer = (state={visitorName:"XYZ", discount:"10000"}, action) => 
 };
 
 
-function funcWithError(){
-    throw Error('an error from sum');
-}
-
+ 
 const discountReducer = (state={visitorName:"XYZ", discount:"10000"}, action) => {
 	switch (action.type) {
 		case 'ADD_DISCOUNT':
